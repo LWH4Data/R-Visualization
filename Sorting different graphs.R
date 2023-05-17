@@ -37,4 +37,3 @@ SpiderWide2LongBar <- ggplot(data = SpiderWide2Long, aes(x = variable, y = value
 #Print two graphs "SpiderLongBar" and "SpiderWide2LongBar" on one page.
 Glist <- arrangeGrob(SpiderLongBar, SpiderWide2LongBar, ncol = 2)
 grid.arrange(Glist)
-
