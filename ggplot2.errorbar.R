@@ -10,12 +10,12 @@ viagraData
 #geom = "errorbar"
 ggplot(data = viagraData, aes(x = dose, y = libido)) +
   stat_summary(geom = "point", fun.y = mean) +
-  stat_summary(geom = "errorbar", fun.data = mean_cl_boot)
+  stat_summary(geom = "errorbar", fun.data = mean_cl_boot, width = 0.5)
 
 #geom = "crossbar"
 ggplot(data = viagraData, aes(x = dose, y = libido)) +
   stat_summary(geom = "point", fun.y = mean) +
-  stat_summary(geom = "crossbar", fun.data = mean_cl_boot)
+  stat_summary(geom = "crossbar", fun.data = mean_cl_boot, width = 0.5)
 
 #geom = "linerange"
 ggplot(data = viagraData, aes(x = dose, y = libido)) +
